@@ -3,5 +3,4 @@ SELECT t.Name AS "Song", TOTAL(il.Quantity) AS "Times Purchased"
 	WHERE il.TrackId = t.TrackId
 	GROUP BY t.Name
 	ORDER BY "Times Purchased" DESC
-	LIMIT 5
-;
+	LIMIT 5;

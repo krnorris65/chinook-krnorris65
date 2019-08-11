@@ -3,5 +3,4 @@ SELECT x.agent AS "Sales Agent", MAX(x.top) AS "Top Overall Sales"
 		FROM Employee e, Customer c, Invoice i
 		WHERE e.EmployeeId = c.SupportRepId
 		AND c.CustomerId = i.CustomerId
-		GROUP BY e.EmployeeId) x
-;
+		GROUP BY e.EmployeeId) x;

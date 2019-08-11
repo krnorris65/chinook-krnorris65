@@ -6,6 +6,5 @@ FROM (
 	AND il.TrackId = t.TrackId
 	AND i.InvoiceDate BETWEEN "2013-01-01" AND "2013-12-31"
 	GROUP BY t.Name
-	) x
-;
+	) x;
 
